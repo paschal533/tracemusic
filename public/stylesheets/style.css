@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+/*Global styles*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #c59d5f;
+    --body-font-color: #515151;
+}
+
+html{
+    font-family: var(--body-font);
+    color: var(--body-font-color);
+    scroll-behavior: smooth;
+}
+ 
+body{
+    overflow-x: hidden;
+}
+
+section{
+    padding: 3.9px 0;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 1.6rem;
+} 
+
+/*header*/
+header{
+  width: 100%;
+  position: absolute;
+  font-size: 10px !important;
+  top: 0;
+  left: 0; 
+  z-index: 1;
+  background-image: linear-gradient(to buttom, rgba(0,0,0,.5), transparent);
+} 
+.topbar{
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+  text-transform: uppercase;
+  font-size: 10px !important;
+  font-size: medium;
+  color: white;
+
+}
+.lyrics{
+  position: absolute;
+  font-size: 10px !important;
+  top: 80%;
+  transform: translateY(-50%);
+  right: 1rem;
+  cursor: pointer;
+  z-index: 1500;
+}
+.input-group-text{
+  background-color: #dc143c !important;
+  color: white !important;
+}
+
+.searchbox{
+  width: 100%;
+  height: 60vh;
+  background:linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/guitar.jpg') center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: saturate(40%) blur(5px);
+  /*clip-path: polygon(0 0,100% 0,100% 100%,0 94%);*/
+}
+.lyrics-searchbox{
+  width: 100%;
+  height: 60vh;
+  background:linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/headphone1.jpg') center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: saturate(40%) blur(5px);
+}
+/*trending*/
+.trending{
+  margin-top: -50px !important;
+}
+.display-searchresult{
+  margin-top: -100px !important;
+}
+
+ 
+/*footer*/
+footer{
+  padding: 5.9rem 0;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.back-to-top{
+  width: 7rem;
+  height: 7rem;
+  background-color: #121212;
+  position: absolute;
+  top: -3rem !important;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+.back-to-top i{
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  padding: 2rem;
+  animation: up 2s infinite;
+}
+
+.footer-content h4{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+.footer-content .asterisk{
+  margin: 1.4rem 0;
+}
+
+.footer-content-about{
+  margin-bottom: 2.4rem;
+}
+
+.footer-content-about p{
+  line-height: 2;
+}
+.social-icons{
+  list-style: none;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons i{
+  font-size: 2rem;
+  color: #fff;
+  padding: .4rem 1rem;
+  opacity: .5;
+  transition: color .5s;
+}
+.social-icons i:hover,
+.social-icons i:focus{
+  color: var(--secondary-font-color);
+}
+.newsletter-form{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.newsletter-input{
+  width: 100%;
+  min-width: 10rem;
+  padding: 1rem;
+  border-radius: .4rem;
+}
+.newsletter-btn{
+  background-color: transparent;
+  border: none;
+  color: var(--main-font-color-dark);
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1px .6rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 6.5rem;
+}
+.footer-content{
+  overflow: hidden;
+}
+/* spinner result*/
+.display-searchresult{
+  display: none;
+}
+.searchresult-section{
+  display: none;
+}
+.show{
+  display: inline-block !important;
+}
+.display-none{
+  display: none  !important;
+}
+/*media quere*/
+@media screen and (min-width: 900px){
+  .car{
+    width: 25rem !important;
+  }
+  .lyrics{
+    position: absolute;
+    font-size: 10px !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    right: 2.5rem;
+    cursor: pointer;
+    z-index: 1500;
+  }
+}
+@media screen and (max-width: 320px){
+  .logo{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 100 !important;
+    color: white;
+  
+  }
+}
+
+.car{
+  width: 100%;
+}
+
+ 

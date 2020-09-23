@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="%images%/logo.jpg" />
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>       
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52421603-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-52421603-5');
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="topbar" id="traceplanet"> 
+          <div class="logo">
+            <h1><i class="fas fa-music"></i>
+              Traceplanet</h1>
+          </div>
+          <div class="lyrics">
+            <a href="https://www.metrolyrics.com/" ><button type="button" class="btn btn-primary">SEE LYRICS</button></a>
+          </div> 
+        </div>
+      </div>
+    </header>
+    <section class="searchbox">
+      <div class="container">
+        <div class="input-group">
+          <input type="search" id="search" class="form-control search" onsearch="javascript:Search()" placeholder="search for any song here" aria-label="search for any song here" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <span class="input-group-text" onclick="javascript:Search()" id="inputGroup-sizing-lg">search</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="display-searchresult container">
+      <div class="card">
+        <h5 class="card-header">Search results</h5>
+        <div class="card-body">
+            <div class="spinner">
+              <div class="text-center"> 
+                <div class="spinner-border text-primary m-5" role="status"> 
+                  <span class="sr-only">Loading...</span> 
+                </div> 
+              </div>    
+            </div>
+            <div class="searchresult-section"></div>
+        </div>
+      </div>
+      <br />
+      <br />
+    </section>
+    <!----first section ends-->
+    <section class="trending container">
+      <div class="card">
+        <h5 class="card-header">TRENDING MUSIC</h5>
+        <div class="card-body">
+          <div class="my-slick" ></div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <!----how to use-->
+    <section class="describtion container">
+      <div class="how-to">
+        <h2 class="header">How to use</h2>
+        <div class="body">
+          <div class="row">
+            <div class="col-auto how-to-use" >
+              <p><h4>TracePlanet</h4> is a free music audio/video downloading website. you can download
+              any music audio/video here by simply searching for the name of the music or artist name in the searchbox
+            up there, then you will get back a list of your matching search results. it really is that simple.
+            <br/>
+            <br/>
+            Alternatively, you can also download youtube videos/audios here by searching the name of the 
+            youtube video or by pasting the video URL on the searchbox up there.
+            <br/>
+            <br/>
+            And don't forget to share and invite your love ones over to this amazing website...Enjoy!!!.
+            </p>
+            </div>
+             
+          </div>
+        </div>
+      </div>
+    </section>
+    <br/>
+    <br/>
+    <footer>
+      <div class="container">
+          <div class="back-to-top">
+              <a href="#traceplanet"><i class="fas fa-chevron-up"></i></a>
+          </div>
+          <div class="footer-content">
+              <div class="footer-content-about animate-top">
+                  <h4>About TracePlanet</h4>
+                  <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                  <p>
+                   TracePLanet is a free music audio/video downloading website. you can 
+                   also view/read lyrics here by clicking on the see lyrics button up there
+                   to take you to the lyrics page.
+                  <br/>
+                  Alternatively, you can also download youtube videos/audios here by searching the name of the 
+                  youtube video or by pasting the video URL on the searchbox up there.
+                  <br/>
+                  And don't forget to share and invite your love ones over to this amazing website...Enjoy!!!.
+                  </p>
+              </div>
+               <div class="footer-content-divider animate-bottom">
+                   <div class="social-media">
+                       <h4>follow along</h4>
+                       <ul class="social-icons">
+                           <li>
+                               <a href="#"><i class="fab fa-twitter"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fab fa-facebook-square"></i></a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fab fa-pinterest"></i></a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                          </li>
+
+                       </ul>
+                   </div>
+                   <div class="newsletter-container">
+                       <h4>Newsletter</h4>
+                       <form action="" class="newsletter-form">
+                           <input type="text" class="newsletter-input" placeholder="your Email Address">
+                           <button class="newsletter-btn" type="submit"><i class="fas fa-envelope"></i></button>
+                       </form>
+                   </div>
+               </div>
+          </div>
+      </div>
+    </footer>
+    <script src="/javascripts/script.js"></script>
+  </body>
+</html>
