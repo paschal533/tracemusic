@@ -25,8 +25,8 @@
       <div class="container">
         <div class="topbar" id="traceplanet"> 
           <div class="logo">
-            <h1><i class="fas fa-music"></i>
-              Traceplanet</h1>
+            <h2><i class="fas fa-music"></i>
+              Traceplanet</h2>
           </div>
           <div class="lyrics">
             <a href="https://www.metrolyrics.com/" ><button type="button" class="btn btn-primary">SEE LYRICS</button></a>
@@ -66,7 +66,37 @@
       <div class="card">
         <h5 class="card-header">TRENDING MUSIC</h5>
         <div class="card-body">
-          <div class="my-slick" ></div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/headphone.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item ">
+                <img src="images/headphone1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <template class="my-slick" ></template>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

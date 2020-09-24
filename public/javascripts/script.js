@@ -25,14 +25,16 @@ function ShowTrending(response){
     }
     var temp;
     
-       temp =  '<div class="card car" >'+
-          '<img src="IMAGE_URL" class="card-img-top" alt="TITLE">'+
+       temp =  '<div class="carousel-item">'+
+       '<div class="card d-block w-100" >'+
+          '<img src="IMAGE_URL" class=" d-block w-100 card-img-top" alt="TITLE">'+
           '<div class="card-body">'+
             '<h5 class="card-title">TITLE- ARTIST_NAME</h5>'+
             '<a href="URL" class="btn btn-block btn-primary px-2">PLAY PREVIEW</a><br>'+
             '<button type="button" class="btn btn-block btn-danger px-2" onclick="SearchTrending(`TITLE-ARTIST_NAME`)">Download Song</button>'+
           '</div>'+
         '</div>'+
+      '</div>'+
       '</div><br><br>';
     
      
